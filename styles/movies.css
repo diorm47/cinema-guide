@@ -1,0 +1,561 @@
+.movie_descriptions {
+  display: flex;
+  align-items: start;
+  gap: 35px;
+}
+.movie_description_card {
+  width: 28%;
+  border-radius: 6px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 1, 0.9) 4.801%,
+      rgba(6, 10, 32, 0) 51.987%
+    ),
+    url(../assets/images/movie-desc.png);
+  background-size: cover;
+  height: 592px;
+  opacity: 0.97;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.movie_ratings {
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  padding: 11px 25px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie_rate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.movie_ratings p {
+  color: rgb(255, 255, 255);
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.rate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rate p {
+  position: absolute;
+}
+
+.movie_descriptions_list {
+  width: 72%;
+}
+.movie_desc_platforms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.movie_desc_platforms button {
+  gap: 5px;
+  color: rgb(255, 192, 1);
+  font-family: Roboto Slab;
+  font-size: 20.43px;
+  font-weight: 900;
+  height: 43.3px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.movie_descriptions_list .block_title {
+  justify-content: space-between;
+}
+
+.movie_descriptions_list_wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.movie_descriptions_list__item {
+  width: 50%;
+}
+
+.movie_descriptions_list__item_desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.movie_descriptions_list__item_desc h4 {
+  color: rgb(103, 112, 122);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.movie_descriptions_list__item_desc p {
+  color: rgb(14, 20, 26);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.movie_descriptions_list__item_colored {
+  border-radius: 6px;
+
+  backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255, 0.3);
+}
+.descr_text {
+  margin-top: 15px;
+  height: 159px;
+  align-items: start;
+}
+.descr_text h3 {
+  color: rgb(14, 20, 26);
+  font-family: Roboto Slab;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.descr_text span {
+  color: rgb(103, 112, 122);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.about_director {
+  display: flex;
+  align-items: start;
+  gap: 25px;
+}
+
+.about_director p {
+  color: rgb(14, 20, 26);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.movie_cost {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding-left: 20px;
+}
+.movie_cost p {
+  color: rgb(103, 112, 122);
+  font-family: Roboto Slab;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.movie_cost h4 {
+  color: rgb(14, 20, 26);
+  font-family: Roboto Slab;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.movie_player_wrapper {
+  background: #f3f4ec;
+  padding-top: 40px;
+  margin-top: 45px;
+}
+
+.sb {
+  justify-content: space-between;
+}
+.movie_player {
+  width: 100%;
+  height: 743px;
+  background: url(../assets/images/movie-playing.png);
+  background-size: cover;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 22px;
+}
+
+.movie_player_btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+.movie_player_btns button {
+  border: none;
+}
+
+.player_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.player_icon img {
+  cursor: pointer;
+}
+.playing_time {
+  height: 11.11px;
+  border-radius: 12px;
+
+  background: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.playing_time_value {
+  border-radius: 12px;
+  height: 11.11px;
+  width: 34%;
+  background: rgb(255, 192, 1);
+}
+
+.movie_player {
+  margin-bottom: 26px;
+}
+
+.movie_emotions {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  margin-bottom: 32px;
+}
+
+.movie_emotion_top {
+  border-radius: 6px;
+  height: 132px;
+  backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 9px;
+}
+
+.movie_emotion_top p {
+  color: rgb(103, 112, 122);
+  font-family: Roboto Slab;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.movie_emotion_btm {
+  border-radius: 6px;
+  height: 60px;
+  backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie_comments {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+.movie_comments_form {
+  width: 43%;
+}
+.form_input input,
+.form_input textarea {
+  width: 100%;
+  border-radius: 6px;
+  height: 55px;
+  backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255, 0.5);
+  text-indent: 24px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form_input input::placeholder,
+.form_input textarea::placeholder {
+  color: rgb(103, 112, 122);
+}
+
+.form_input textarea {
+  height: 161px;
+  text-indent: 0;
+  padding: 24px;
+  padding-top: 17px;
+  resize: none;
+}
+
+.emoji {
+  width: 100%;
+  margin: 17px 0;
+}
+.form_actions .main_btn {
+  height: 55px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.form_actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.emotion {
+  border: none;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(103, 112, 122);
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.movie_comments_list {
+  width: 58%;
+}
+
+.user_comment {
+  border-radius: 6px;
+  padding: 22px 24px;
+  backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 21px;
+}
+
+.user {
+  width: 62px;
+  height: 62px;
+  border-radius: 6px;
+
+  backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user_comment_content_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.user_comment_content {
+  width: 90%;
+}
+.user_comment_content_top h3 {
+  color: rgb(14, 20, 26);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.comment_time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment_time p {
+  color: rgb(103, 112, 122);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.comment_text p {
+  color: rgb(103, 112, 122);
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.user_comment_actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user_comment_action {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.user_comment_action p {
+  color: rgb(14, 20, 26);
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.user_comment {
+  margin-bottom: 10px;
+}
+.comment_replay {
+  margin-left: 82px;
+}
+.about_movie_wrapper {
+  padding-top: 40px;
+  background: #ebece4;
+}
+.movie_page_footer {
+  background: #f5f6ee;
+}
+.movie_player_wrapper {
+  padding-bottom: 38px;
+}
+.about_movie_container p {
+  color: rgb(103, 112, 122);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: rgb(28, 33, 53, 0.1);
+  margin: 40px 0;
+}
+.block_title h5 {
+  color: rgb(14, 20, 26);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 15px;
+}
+.movie_facts {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.movie_facts_left,
+.movie_facts_right {
+  width: 45%;
+}
+.movie_fact {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 27px;
+}
+.movie_fact p {
+  margin: 0;
+}
+.movie_fact h3 {
+  color: rgb(255, 192, 1);
+  font-family: Roboto Slab;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.movie_fact:last-child {
+  margin-bottom: 0;
+}
+.recommend_movies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.series_player {
+  background: url(../assets/images/series.png);
+  background-size: cover;
+}
+
+.seasons_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.seasons_list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.b_line {
+  height: 25px;
+  width: 1px;
+  background: rgb(39, 45, 70);
+}
+.seasons_arrows {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.seasons_arrow {
+  cursor: pointer;
+}
