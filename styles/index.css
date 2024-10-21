@@ -78,6 +78,14 @@ header {
 
   background-size: cover;
 }
+.dark_mode header {
+  background: linear-gradient(
+      0deg,
+      rgb(18, 26, 33) 23%,
+      rgba(18, 26, 33, 0) 74.07%
+    ),
+    url(../assets/images/header.png);
+}
 
 .header_gr {
   position: absolute;
@@ -176,6 +184,10 @@ header {
 }
 .header_actions button:last-child {
   padding: 0 22px;
+}
+.dark_mode .header_actions .black_btn {
+  background: rgba(18, 26, 33, 0.8);
+  border: none;
 }
 
 .header_carousel {

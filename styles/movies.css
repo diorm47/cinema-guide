@@ -78,6 +78,17 @@
   letter-spacing: 0%;
   text-align: left;
 }
+.dark_mode .movie_desc_platforms .main_btn {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: none !important;
+  color: rgb(255, 192, 1);
+}
+.dark_mode .movie_descriptions_list__item .main_btn {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: none !important;
+  font-size: 14px;
+  color: rgb(174, 180, 209);
+}
 
 .movie_descriptions_list .block_title {
   justify-content: space-between;
@@ -108,6 +119,9 @@
   letter-spacing: 0%;
   text-align: left;
 }
+.dark_mode .movie_descriptions_list__item_desc h4 {
+  color: rgb(255, 255, 255);
+}
 
 .movie_descriptions_list__item_desc p {
   color: rgb(14, 20, 26);
@@ -118,12 +132,17 @@
   letter-spacing: 0%;
   text-align: right;
 }
-
+.dark_mode .movie_descriptions_list__item_desc p {
+  color: rgb(255, 192, 1);
+}
 .movie_descriptions_list__item_colored {
   border-radius: 6px;
 
   backdrop-filter: blur(4px);
   background: rgb(255, 255, 255, 0.3);
+}
+.dark_mode .movie_descriptions_list__item_colored {
+  background: rgb(15, 22, 28);
 }
 .descr_text {
   margin-top: 15px;
@@ -140,6 +159,9 @@
   text-align: left;
   margin-bottom: 20px;
 }
+.dark_mode .descr_text h3 {
+  color: rgb(255, 255, 255);
+}
 .descr_text span {
   color: rgb(103, 112, 122);
   font-family: Inter;
@@ -148,6 +170,9 @@
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .descr_text span {
+  color: rgb(174, 180, 209);
 }
 
 .about_director {
@@ -191,11 +216,17 @@
   letter-spacing: 0%;
   text-align: left;
 }
+.dark_mode .movie_cost h4 {
+  color: rgb(255, 192, 1);
+}
 
 .movie_player_wrapper {
   background: #f3f4ec;
   padding-top: 40px;
   margin-top: 45px;
+}
+.dark_mode .movie_player_wrapper {
+  background-color: #12171d;
 }
 
 .sb {
@@ -223,6 +254,11 @@
   border: none;
 }
 
+.dark_mode .movie_player_btns .main_btn {
+  border-radius: 6px;
+  border: none;
+  background: rgb(10, 14, 20);
+}
 .player_icon {
   display: flex;
   align-items: center;
@@ -238,6 +274,9 @@
 
   background: rgb(255, 255, 255);
   width: 100%;
+}
+.dark_mode .playing_time {
+  background: rgb(30, 43, 55);
 }
 
 .playing_time_value {
@@ -269,6 +308,11 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 9px;
+}
+.dark_mode .movie_emotion_top,
+.dark_mode .movie_emotion_btm {
+  background: rgb(15, 22, 28);
+  border: 2px solid rgb(29, 38, 56);
 }
 
 .movie_emotion_top p {
@@ -316,6 +360,12 @@
   text-align: left;
   margin-bottom: 10px;
 }
+.dark_mode .form_input input,
+.dark_mode .form_input textarea {
+  border: 2px solid rgb(29, 38, 56);
+  background: transparent;
+  color: #fff;
+}
 
 .form_input input::placeholder,
 .form_input textarea::placeholder {
@@ -358,6 +408,7 @@
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+  background: transparent;
 }
 .movie_comments_list {
   width: 58%;
@@ -373,6 +424,10 @@
   justify-content: space-between;
   gap: 21px;
 }
+.dark_mode .user_comment {
+  border: 2px solid rgb(29, 38, 56);
+  background: transparent;
+}
 
 .user {
   width: 62px;
@@ -384,6 +439,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.dark_mode .user {
+  border: 2px solid rgb(39, 45, 70);
+  background: transparent;
 }
 .user_comment_content_top {
   display: flex;
@@ -403,6 +462,9 @@
   letter-spacing: 0%;
   text-align: left;
 }
+.dark_mode .user_comment_content_top h3 {
+  color: #fff;
+}
 .comment_time {
   display: flex;
   align-items: center;
@@ -417,6 +479,9 @@
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .comment_time p, .dark_mode .comment_text p,.dark_mode .user_comment_action p {
+  color: rgb(174, 180, 209);
 }
 
 .comment_text p {
@@ -460,6 +525,9 @@
   padding-top: 40px;
   background: #ebece4;
 }
+.dark_mode .about_movie_wrapper {
+  background: #131a22;
+}
 .movie_page_footer {
   background: #f5f6ee;
 }
@@ -476,11 +544,17 @@
   text-align: left;
   margin-bottom: 16px;
 }
+.dark_mode .about_movie_container p {
+  color: rgb(174, 180, 209);
+}
 .line {
   width: 100%;
   height: 1px;
   background: rgb(28, 33, 53, 0.1);
   margin: 40px 0;
+}
+.dark_mode .line {
+  background-color: rgb(39, 45, 70, 0.5);
 }
 .block_title h5 {
   color: rgb(14, 20, 26);
@@ -491,6 +565,9 @@
   letter-spacing: 0%;
   text-align: left;
   margin-top: 15px;
+}
+.dark_mode .block_title h5 {
+  color: rgb(255, 255, 255);
 }
 .movie_facts {
   display: flex;

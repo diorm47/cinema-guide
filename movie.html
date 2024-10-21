@@ -40,12 +40,18 @@
           </div>
           <div class="mode_toggler">
             <div class="mode_toggler_wrapper">
-              <div class="mode_toggler_btn mode_toggler_btn_active">
+              <div
+                class="mode_toggler_btn mode_toggler_btn_active"
+                onclick="toggleMode()"
+              >
                 <svg width="12" height="12">
                   <use xlink:href="#day"></use>
                 </svg>
               </div>
-              <div class="mode_toggler_btn">
+              <div
+                class="mode_toggler_btn dark_mode_btn"
+                onclick="toggleMode()"
+              >
                 <svg width="11" height="13">
                   <use xlink:href="#night"></use>
                 </svg>
@@ -824,17 +830,21 @@
         </div>
         <div class="footer_menu">
           <div class="footer_actions">
-            <div class="footer_action">
+            <div class="footer_action" id="scrollToTopBtn">
               <img src="./assets/icons/chev-top.svg" alt="" />
             </div>
-            <div class="footer_action">
-              <svg width="11" height="13">
+            <div class="footer_action" onclick="toggleMode()">
+              <svg width="11" height="13" class="darl_f_logo">
                 <use xlink:href="#night"></use>
+              </svg>
+              <svg width="12" height="12" class="light_f_logo">
+                <use xlink:href="#day"></use>
               </svg>
             </div>
           </div>
           <a href="./index.html">
-            <img src="./assets/logo.dark.svg" alt="" />
+            <img class="darl_f_logo" src="./assets/logo.dark.svg" alt="" />
+            <img class="light_f_logo" src="./assets/logo.svg" alt="" />
           </a>
           <div class="footer_menu_list">
             <a href="#"><p>Фильмы</p></a>
@@ -873,5 +883,6 @@
         />
       </symbol>
     </svg>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

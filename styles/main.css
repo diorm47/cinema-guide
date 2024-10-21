@@ -14,7 +14,8 @@ body {
 a {
   text-decoration: none;
 }
-input, textarea {
+input,
+textarea {
   border: none;
   outline: none;
 }
@@ -55,6 +56,9 @@ nav {
 }
 .nav_menu_item:last-child {
   border-right: 1px solid rgb(39, 45, 70);
+}
+.dark_mode .nav_menu_item:last-child {
+  border-right: 1px solid rgb(39, 45, 70, 0.5);
 }
 
 .nav_menu_item p {
@@ -97,6 +101,9 @@ nav {
   cursor: pointer;
   padding: 30px 32px;
 }
+.dark_mode .nav_bookmark {
+  border-right: 1px solid rgb(39, 45, 70, 0.5);
+}
 
 .mode_toggler_btn svg * {
   fill: #313755;
@@ -114,7 +121,18 @@ nav {
 .mode_toggler_btn_active {
   background: rgb(255, 192, 1);
 }
-
+.dark_mode .dark_mode_btn {
+  background: rgb(255, 192, 1);
+}
+.dark_mode .mode_toggler_btn_active {
+  background: transparent;
+}
+.dark_mode .mode_toggler_btn_active svg * {
+  fill: #313755;
+}
+.dark_mode {
+  background: #111a21 !important;
+}
 .mode_toggler_wrapper {
   display: flex;
   align-items: center;
@@ -133,6 +151,9 @@ nav {
 .mode_toggler {
   border-right: 1px solid rgb(39, 45, 70);
   padding: 25px 26px;
+}
+.dark_mode .mode_toggler {
+  border-right: 1px solid rgb(39, 45, 70, 0.5);
 }
 
 .mode_toggler_btn_active svg * {
@@ -154,6 +175,9 @@ nav {
   text-align: left;
   color: rgb(157, 164, 192);
 }
+.dark_mode .pages_navigation_active {
+  color: rgb(255, 255, 255);
+}
 .pages_navigation_active {
   color: rgb(113, 116, 124);
 }
@@ -165,6 +189,9 @@ nav {
   line-height: 34px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .block_title h3 {
+  color: rgb(255, 255, 255);
 }
 .block_title {
   display: flex;
@@ -196,9 +223,18 @@ nav {
   border: none;
   cursor: pointer;
 }
+.dark_mode .main_btn {
+  box-sizing: border-box;
+  border: 2px solid rgb(29, 38, 56);
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+}
 
 .yellow_btn {
-  background: rgb(255, 192, 1);
+  background: rgb(255, 192, 1) !important;
+  border: none !important;
+  color: rgb(16, 24, 30) !important;
 }
 .movies_container {
   display: grid;
@@ -270,6 +306,9 @@ nav {
   letter-spacing: 0%;
   text-align: center;
 }
+.dark_mode .movie_card_name p {
+  color: #fff;
+}
 
 .movie_card {
   cursor: pointer;
@@ -291,6 +330,9 @@ footer {
   margin-top: 34px;
   padding: 48px 0 40px;
 }
+.dark_mode footer {
+  background: rgb(14, 20, 26);
+}
 .footer_text p {
   color: rgb(103, 112, 122);
   font-family: Roboto;
@@ -299,6 +341,9 @@ footer {
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .footer_text p {
+  color: rgb(174, 180, 209);
 }
 .footer_text {
   margin-bottom: 30px;
@@ -322,6 +367,9 @@ footer {
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 13px;
+}
+.dark_mode .footer_text h4, .dark_mode .footer_text h3 {
+  color: #fff;
 }
 
 .footer_menu {
@@ -349,10 +397,16 @@ footer {
   text-align: left;
   text-transform: uppercase;
 }
+.dark_mode .footer_menu_list a p {
+  color: rgb(255, 255, 255);
+}
 .f_line {
   height: 11px;
   width: 1px;
   background: rgb(39, 45, 70, 0.1);
+}
+.dark_mode .f_line {
+  background: rgb(39, 45, 70);
 }
 
 .copyright {
@@ -363,6 +417,9 @@ footer {
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .copyright {
+  color: rgb(174, 180, 209);
 }
 .contact_btn {
   display: flex;
@@ -380,8 +437,20 @@ footer {
   letter-spacing: 0%;
   text-align: left;
 }
+.dark_mode .contact_btn p {
+  color: rgb(255, 255, 255);
+}
 .footer_menu {
   position: relative;
+}
+.light_f_logo {
+  display: none;
+}
+.dark_mode .light_f_logo {
+  display: block;
+}
+.dark_mode .darl_f_logo {
+  display: none;
 }
 .footer_actions {
   display: flex;
@@ -403,6 +472,11 @@ footer {
 
 .footer_actions .footer_action:first-child {
   background: rgb(13, 19, 25);
+}
+.dark_mode .footer_actions .footer_action:first-child {
+  border-radius: 6px;
+
+background: rgb(30, 42, 53);
 }
 .footer_actions .footer_action:last-child {
   background: rgb(255, 192, 1);
@@ -433,6 +507,9 @@ footer {
   text-align: center;
   margin-top: -70px;
 }
+.dark_mode .not_found_wrapper h1 {
+  color: rgb(255, 255, 255);
+}
 .not_found_wrapper p {
   margin-top: 32px;
   font-family: Inter;
@@ -442,6 +519,9 @@ footer {
   letter-spacing: 0%;
   text-align: center;
   color: rgb(103, 112, 122);
+}
+.dark_mode .not_found_wrapper p {
+  color: rgb(174, 180, 209);
 }
 .not_found_wrapper p a {
   color: rgb(255, 192, 1);
