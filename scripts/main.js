@@ -34,7 +34,6 @@ buttons.forEach((button) => {
 // to top btn
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-
 scrollToTopBtn.addEventListener("click", function () {
   window.scrollTo({
     top: 0,

@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: -1px;
 }
 
 .movie_rate {
@@ -480,7 +481,9 @@
   letter-spacing: 0%;
   text-align: left;
 }
-.dark_mode .comment_time p, .dark_mode .comment_text p,.dark_mode .user_comment_action p {
+.dark_mode .comment_time p,
+.dark_mode .comment_text p,
+.dark_mode .user_comment_action p {
   color: rgb(174, 180, 209);
 }
 
@@ -635,4 +638,219 @@
 }
 .seasons_arrow {
   cursor: pointer;
+}
+.movie_name {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .movie_descriptions {
+    flex-direction: column;
+  }
+  .movie_description_card,
+  .movie_descriptions_list {
+    width: 100%;
+  }
+  .recommend_movies .movie_card:nth-child(2) {
+    display: none;
+  }
+  .seasons_wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .seasons_list {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .movie_name {
+    display: block;
+  }
+  .movie_descriptions_list_wrapper {
+    flex-direction: column;
+  }
+  .movie_descriptions_list .block_title {
+    display: none;
+  }
+  .movie_descriptions_list__item,
+  .movie_comments_form,
+  .movie_comments_list,
+  .movie_facts_left {
+    width: 100%;
+  }
+  .movie_comments {
+    flex-direction: column;
+  }
+  .movie_facts .movie_facts_right {
+    display: none;
+  }
+}
+
+.dark_mode .movie_description_card .main_btn {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .movie_emotion_top img {
+    width: 15px;
+  }
+  .movie_emotion_top {
+    height: 38.53px;
+    gap: 4px;
+  }
+  .movie_emotion_top p {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 12px;
+  }
+  .movie_emotion_btm {
+    height: 23px;
+  }
+  .movie_emotion_btm img {
+    width: 15px;
+  }
+  .movie_player {
+    height: 219px;
+    padding: 18px;
+  }
+  .movie_player_btns {
+    justify-content: center;
+  }
+  .movie_player_btns .main_btn:last-child {
+    display: none;
+  }
+  .player_icon img {
+    width: 50px;
+  }
+  .playing_time,
+  .playing_time_value {
+    border-radius: 12px;
+    height: 5px;
+  }
+  .form_actions .emotion {
+    font-size: 0;
+  }
+  .comment_replay {
+    margin-left: 20px;
+  }
+  .movie_description_card {
+    height: 460px;
+    overflow: hidden;
+  }
+  .movie_descriptions {
+    gap: 15px;
+  }
+  .movie_descriptions_list__item_desc p {
+    font-size: 13px;
+  }
+  .movie_descriptions_list__item_desc h4 {
+    font-size: 13px;
+  }
+  .movie_descriptions_list__item_desc {
+    padding: 15px 18px;
+  }
+  .descr_text {
+    height: auto;
+  }
+  .movie_descriptions_list__item .main_btn {
+    margin-left: 20px;
+  }
+  .about_director {
+    gap: 20px;
+  }
+  br {
+    display: none;
+  }
+  .movie_cost {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    padding: 0;
+  }
+  .about_director_block {
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .movie_description_card .main_btn {
+    height: 53px;
+    padding: 0 36px;
+  }
+  .sb {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .sb .main_btn {
+    font-size: 0;
+    gap: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .block_title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .sb h3 {
+    width: 85%;
+  }
+  .movie_emotions {
+    margin-bottom: 20px;
+  }
+  .movie_player {
+    margin-bottom: 10px;
+  }
+  .movie_player_wrapper {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .form_input input,
+  .form_input textarea {
+    height: 45px;
+  }
+  .form_input textarea {
+    height: 110px;
+  }
+  .block_title {
+    margin-bottom: 20px;
+  }
+  .user_comment {
+    padding: 15px;
+  }
+  .user_comment_content_top {
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .movie_player_wrapper {
+    padding-bottom: 20px;
+  }
+  .about_movie_wrapper {
+    padding-top: 22px;
+  }
+  .line {
+    margin: 25px 0;
+  }
+  .movie_fact {
+    gap: 16px;
+  }
+  .movie_fact {
+    margin-bottom: 12px;
+  }
+  .seasons_wrapper .yellow_btn:last-child {
+    font-size: 0;
+    gap: 0;
+  }
+  .seasons_list {
+    flex-wrap: wrap;
+  }
+  .seasons_arrows {
+    display: none;
+  }
 }

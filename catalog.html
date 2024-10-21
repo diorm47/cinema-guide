@@ -57,6 +57,55 @@
               </div>
             </div>
           </div>
+          <div class="nav_menu_icon" onclick="toggleMenu()">
+            <img src="./assets/icons/mob-menu.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="nav_mob_wrapper">
+        <img
+          onclick="toggleMenu()"
+          class="exit_btn"
+          src="./assets/icons/exit.svg"
+          alt=""
+        />
+        <div class="nav_menu">
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Фильмы</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" /></div
+          ></a>
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Сериалы</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" /></div
+          ></a>
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Мультфильмы</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" /></div
+          ></a>
+        </div>
+        <div class="nav_search">
+          <img src="./assets/icons/lupa.svg" alt="" />
+          <input type="text" placeholder="Поиск фильмов и сериалов" />
+        </div>
+        <div class="mode_toggler">
+          <div class="mode_toggler_wrapper">
+            <div
+              class="mode_toggler_btn mode_toggler_btn_active"
+              onclick="toggleMode()"
+            >
+              <svg width="12" height="12">
+                <use xlink:href="#day"></use>
+              </svg>
+            </div>
+            <div class="mode_toggler_btn dark_mode_btn" onclick="toggleMode()">
+              <svg width="11" height="13">
+                <use xlink:href="#night"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
